@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klarna x Armani Issue report form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://d2csxpduxe849s.cloudfront.net/media/75E89CA6-9772-4B65-ADC5BDD67CC89059/739D31ED-4CD5-4594-9E3E12991FB197EE/webimage-E2F6B187-9F53-4565-9F2A9CF0358B8B69.png">
+</head>
+<body>
+    <div class="container">
+        <div class="header-logos">
+            <img src="https://s205.q4cdn.com/644747736/files/design/site_logo/Wordmark_Transparent_And_Black.png" alt="Klarna Logo">
+            <img src="https://static.vecteezy.com/ti/vettori-gratis/p1/23585888-giorgio-armani-marca-logo-simbolo-nero-design-abiti-moda-vettore-illustrazione-gratuito-vettoriale.jpg" alt="Armani Logo">
+        </div>
+        <h1>Issue Report Form</h1>
+        <p class="subtitle">Please fill out the form below to report an issue</p>
+        
+        <form id="issueForm">
+            <div class="form-group">
+                <label for="orderId">
+                    Order ID
+                    <span class="required">*</span>
+                </label>
+                <input type="text" id="orderId" name="orderId" required placeholder="e.g. 87197806">
+            </div>
+            <div class="form-group">
+                <label for="paymentReference">
+                    Payment Reference
+                    <span class="required">*</span>
+                </label>
+                <input type="text" id="paymentReference" name="paymentReference" required placeholder="e.g. GDB6C3885MKKDSP9">
+            </div>
+            <div class="form-group">
+                <label for="date">
+                    Date
+                    <span class="required">*</span>
+                </label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">
+                    Amount
+                    <span class="required">*</span>
+                </label>
+                <input type="number" id="amount" name="amount" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">
+                    Comments
+                </label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit" id="submitBtn">Submit Report</button>
+            <div id="message" class="message"></div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
